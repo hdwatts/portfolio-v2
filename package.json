@@ -33,9 +33,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "gatsby serve --port ${PORT}",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "heroku-postbuild": "gatsby build",
   },
   "devDependencies": {
     "prettier": "^1.15.2"
