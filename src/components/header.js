@@ -3,6 +3,7 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 var Scroll = require('react-scroll');
 var scroller = Scroll.scroller;
