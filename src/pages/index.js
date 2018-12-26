@@ -35,7 +35,7 @@ const IndexPage = () => (
             {/*<div style={{width: '100%', marginTop: 'auto'}}><h1>About</h1></div>*/}
             <div className='hdwatts-about-background' style={{marginTop: 'auto'}}>
               <div className='hdwatts-about-text'>
-                <p><span className='line'>I am a software developer based in New York,</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'>working for <a style={{color: '#FDFFFC'}} href='https://www.chronograph.pe'>Chronograph Private Equity</a>.</span></p>
+                <p><span className='line'>I am a software developer based in New York and</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'>working for <a style={{color: '#FDFFFC'}} href='https://www.chronograph.pe'>Chronograph Private Equity</a>.</span></p>
                 <p><span className='line'>I specialize in web applications and have built apps with React-Redux, Node.js, .NET, Rails, ColdFusion, and Perl in professional environments.</span></p>
                 <p><span className='line'>When I'm not coding, I love to travel, eat good food, and play guitar.</span></p>
                 <p><span className='line'>Feel free to reach out to me anytime: <a style={{color: '#FDFFFC'}} href='mailto:howard@hdwatts.com'>howard@hdwatts.com</a>.</span></p>
