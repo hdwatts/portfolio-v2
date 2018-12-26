@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import { Helmet } from "react-helmet"
 
 import Header from './header'
 import './layout.scss'
+import metaimg from '../images/meta-img.png'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,6 +20,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <Helmet>
+          <meta property="og:title" content="Welcome | Howard Dean Watts" />
+          <meta property="og:image" content={metaimg} />
+        </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
