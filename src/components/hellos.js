@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const hellos = ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'Gutan Tag', 'Namaste', 'Salaam', 'Olà']
+const hellos = ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'Guten Tag', 'Hej', 'Привет', 'Namaste', 'Salaam', 'Olá', 'Oi']
 const speed = 2000
 
 class Hellos extends Component{
