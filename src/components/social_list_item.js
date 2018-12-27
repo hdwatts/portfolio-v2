@@ -13,13 +13,13 @@ const SocialListItem = ({ onMouseOver, onMouseOut, icon, link }) =>
 
 SocialListItem.propTypes = {
   iconText: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.object,
   link: PropTypes.string,
 }
 
 SocialListItem.defaultProps = {
   iconText: '',
-  icon: '',
+  icon: {},
   link: '',
 }
 

@@ -770,8 +770,12 @@ body {
   .header h1 {
     font-size: 150%;
   }
+  .card h1 {
+    font-size: 175%;
+  }
   .hdwatts-about-text {
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: 500;
   }
 }
 
