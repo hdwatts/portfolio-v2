@@ -17,7 +17,7 @@ const PageDownBar = ({pageId, top, style = {}, offset=0, text='Continue'}) =>
     { top
       ? <div>
         <div style={{height: '1em'}}><FontAwesomeIcon icon={ faCaretUp }/></div>
-        <div className='continue' style={{height: '1em'}}><small>Top</small></div>
+        <div className='continue'><small>Top</small></div>
       </div>
       : <div>
         <div className='continue' style={{height: '1em'}}><small>{text}</small></div>

@@ -670,6 +670,31 @@ html{
     100%{background-position:100% 0%}
 }
 
+@-webkit-keyframes handshake {
+    0%{transform: translateY(0px)}
+    20%{transform: translateY(-15px)}
+    45%{transform: translateY(5px)}
+    70%{transform: translateY(0px)}
+}
+@-moz-keyframes handshake {
+    0%{transform: translateY(0px)}
+    20%{transform: translateY(-15px)}
+    45%{transform: translateY(5px)}
+    70%{transform: translateY(0px)}
+}
+@-o-keyframes handshake {
+    0%{transform: translateY(0px)}
+    20%{transform: translateY(-15px)}
+    45%{transform: translateY(5px)}
+    70%{transform: translateY(0px)}
+}
+@keyframes handshake { 
+    0%{transform: translateY(0px)}
+    20%{transform: translateY(-15px)}
+    45%{transform: translateY(5px)}
+    70%{transform: translateY(0px)}
+}
+
 body {
   /*background-image: url('../images/delta_lake.jpg');
   background-position: center; 
@@ -687,6 +712,13 @@ body {
   /*font-variant-caps: small-caps;*/
 }
 
+.handshake {
+  -webkit-animation: handshake 2s ease infinite;
+  -moz-animation: handshake 2s ease infinite;
+  -o-animation: handshake 2s ease infinite;
+  animation: handshake 2s ease infinite;
+}
+
 .boxBar {
   -webkit-animation: boxBarAnimation 1.5s ease infinite;
   -moz-animation: boxBarAnimation 1.5s ease infinite;
@@ -700,38 +732,43 @@ body {
 }
 .boxBar:hover {
   /*border-top: 1px solid #011627;*/
-  color: #011627;
+  color: #2ec4b6;
 }
 .hdwatts-about-text {
   display: flex;
   flex-direction: column;
+  margin=top: auto;
   flex-wrap: wrap;
-  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 135%;
   justify-content: flex-end;
   padding: 0px 25px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%,rgba(0,0,0,.7) 100%);
   width:100%;
-  padding-bottom: 25px;
+  text-align: left;
 }
 
 .hdwatts-about-text p {
-  margin-bottom: 0;
+  margin-bottom: 5;
 }
 
 .hdwatts-about-background {
-  background: url('../images/hdwattsfull.jpg');
-  background-blend-mode: multiply;
+  /*background: url('../images/hdwattsfull.jpg');
+  background-blend-mode: multiply;*/
   background-size: cover;
-  font-family: 'Lato', sans-serif;
-  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23), inset 0 -3px 6px rgba(0,0,0,0.16), inset 0 -3px 6px rgba(0,0,0,0.23);
+  /*border-top: 2px groove #FDFFFC;*/
+  /*border-bottom: 2px groove #FDFFFC;*/
+  /*box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23), inset 0 -3px 6px rgba(0,0,0,0.16), inset 0 -3px 6px rgba(0,0,0,0.23);*/
   background-position: 50% 50%;
   background-repeat: no-repeat;
   min-width: 250px;
   min-height: 450px;
   width: 100%;
-  display: flex;
-  justify-content: center;
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.hdwatts-about-background picture img{
+  object-position: 65% 50% !important; 
 }
 
 .card {
@@ -746,7 +783,6 @@ body {
   text-align: center;
   /*background-color: #FDFFFC;*/
   padding: 15px;
-  border-radius: 10px;
 }
 
 .line {
@@ -773,6 +809,9 @@ body {
   .card h1 {
     font-size: 175%;
   }
+  .hdwatts-about-background {
+    background-position: 65% 50%;
+  }
   .hdwatts-about-text {
     font-size: 3.5vw;
     font-weight: 500;
@@ -783,8 +822,9 @@ span.highlight {
   /*color: #2EC4B6;*/
   /*background-color:#2EC4B6;*/
 }
-.header span:hover {
-  text-decoration: underline;
+.header span:hover,.header a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: #2ec4b6;
 }
 
 .social-list{
@@ -817,9 +857,13 @@ span.highlight {
   color: #FDFFFC !important;
 }
 
+.card a:hover {
+  text-decoration-color: #2ec4b6 !important;
+  /*color: #2ec4b6 !important;*/
+}
 
 .social-list-icons div a:hover {
-  color: #011627 !important;
+  color: #2ec4b6 !important;
 }
 
 .social-list-text{

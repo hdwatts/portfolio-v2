@@ -19,7 +19,7 @@ class SocialList extends Component{
   render() {
     return <div className='social-list' id='social-wrapper'>
       <div className='social-list-icons'>
-        <SocialListItem onMouseOver={()=>this.onMouseOver('howard@hdwatts.com')} onMouseOut={this.onMouseOut} icon={faEnvelope} link={'mailto:howard@hdwatts.com'}/>
+        <SocialListItem onMouseOver={()=>this.onMouseOver('howard@hdwatts.com')} onMouseOut={this.onMouseOut} icon={faEnvelope} noBlank link={'mailto:howard@hdwatts.com'}/>
         <SocialListItem onMouseOver={()=>this.onMouseOver('Instagram')} onMouseOut={this.onMouseOut} icon={faInstagram} link={'https://www.instagram.com/deanwatts2'}/>
         <SocialListItem onMouseOver={()=>this.onMouseOver('GitHub')} onMouseOut={this.onMouseOut} icon={faGithub} link={'https://www.github.com/hdwatts'}/>
         <SocialListItem onMouseOver={()=>this.onMouseOver('Medium')} onMouseOut={this.onMouseOut} icon={faMedium} link={'https://www.medium.com/@hdwatts'}/>

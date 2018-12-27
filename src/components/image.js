@@ -17,16 +17,16 @@ const Image = ({path}) => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "hdwatts2.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "hdwattsfull.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1331) {
+            fluid(maxWidth: 4032) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img style={{borderRadius: '50%', width:250, height: 250}} imgStyle={{top: 10}} fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img className='hdwatts-about-background' style={{position: 'absolute', zIndex: -1, top: 0, left: 0, height: '100%', width: '100%'}}fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default Image

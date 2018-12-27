@@ -44,21 +44,18 @@ const Header = ({ siteTitle }) => (
         </span>
       </h1>
       <div>
-        <span
+        <a
           className='header-link'
           style={{
             cursor: 'pointer',
             color: '#FDFFFC',
             marginRight: 10,
+            textDecoration: 'none',
           }}
-          onClick={()=>scroller.scrollTo('page2', {
-            duration: 1000,
-            delay: 50,
-            smooth: 'easeInOutQuad',
-          })}
+          href={'mailto:howard@hdwatts.com'}
         >
-          About
-        </span>
+          Email Me!
+        </a>
         {/*<span
           to="/"
           className='header-link'

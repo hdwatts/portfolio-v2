@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TextTransition       from "react-text-transition";
 
 const hellos = ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'Guten Tag', 'Hej', 'Привет', 'Namaste', 'Salaam', 'Olá', 'Oi']
 const speed = 2000
@@ -27,7 +28,7 @@ class Hellos extends Component{
 
   render() {  
     const { helloIndex } = this.state
-    return <span>{hellos[helloIndex]}</span>
+    return <TextTransition text={hellos[helloIndex] + ','}/>
   }
 }
 

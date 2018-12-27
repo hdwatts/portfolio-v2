@@ -1,11 +1,14 @@
 import React from 'react'
 //import { Link } from 'gatsby'
 
+import Image from '../components/image'
 import Layout from '../components/layout'
 import SocialList from '../components/social_list'
 import PageDownBar from '../components/page_down_bar'
 import SEO from '../components/seo'
 import Hellos from '../components/hellos'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandshake } from '@fortawesome/free-solid-svg-icons'
 
 var Scroll = require('react-scroll');
 var Element = Scroll.Element;
@@ -16,35 +19,45 @@ const IndexPage = () => (
     <Element name='container' className='element' id='containerElement'>
       <div style={{width: '100%'}}>
         <Element name='page1'>
-          <div className='card'>
-            <h1 style={{marginTop: 'auto', marginBottom: 0}}><Hellos/>,</h1>
-            <h1>I'm Howard Dean Watts.</h1>
-            <p>
-              <span className='line'>Lead Software Engineer</span>
-              <span className='vertical-divider'>|</span>
-              <span className='line'>Founding Member of <a href='https://www.chronograph.pe' style={{color: 'inherit'}}>Chronograph.pe</a></span>
-              <span className='vertical-divider'>|</span>
-              <span className='line'>Manhattan, NY</span>
-            </p>
-            <SocialList/>
-            <PageDownBar text='About' pageId={'page2'} offset={10}/>
-          </div>
-        </Element>
-        <Element name='page2'>
-          <div className='card' style={{padding: 0}}>
-            {/*<div style={{width: '100%', marginTop: 'auto'}}><h1>About</h1></div>*/}
-            <div className='hdwatts-about-background' style={{marginTop: 'auto'}}>
-              <div className='hdwatts-about-text'>
-                <p><span className='line'>I am a software developer based in New York and</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'>working for <a style={{color: '#FDFFFC'}} href='https://www.chronograph.pe'>Chronograph Private Equity</a>.</span></p>
-                <p><span className='line'>I specialize in web applications and have built apps</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'>with React-Redux, Node.js, .NET, Rails, ColdFusion,</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'>and Perl in professional environments.</span></p>
-                <p><span className='line'>When I'm not coding, I love to travel,</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'>eat good food, and play guitar.</span></p>
-                <p><span className='line'>Feel free to reach out to me anytime:</span><span className='vertical-divider' style={{margin: '0 2.5px'}}></span><span className='line'><a style={{color: '#FDFFFC'}} href='mailto:howard@hdwatts.com'>howard@hdwatts.com</a>.</span></p>
-              </div>
+          <div className=''>
+            <Image />
+            <div className='card' style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)'}}>
+              <h1 style={{margin: 'auto', textAlign: 'left', marginBottom: 0}}><Hellos/></h1>
+              <h1>I'm Howard <span style={{textDecoration: 'underline'}}>Dean</span> Watts.</h1>
+              <p>
+                <span className='line'>Lead Software Engineer</span>
+                <span className='vertical-divider'>|</span>
+                <span className='line'>Founding Member of <a href='https://www.chronograph.pe' style={{color: 'inherit'}}>Chronograph.pe</a></span>
+                <span className='vertical-divider'>|</span>
+                <span className='line'>Manhattan, NY</span>
+              </p>
+              <SocialList/>
+              <PageDownBar text='About' pageId={'page2'} offset={10}/>
             </div>
-            <PageDownBar pageId={'page1'} top style={{marginBottom: 20}}/>
-            {/*<PageDownBar pageId={'page3'}/>*/}
           </div>
         </Element>
+          <div style={{padding: '1.0875rem'}}>
+            <Element name='page2'>
+            <div className='card' style={{backgroundColor: 'rgba(255,255,255,.3)', borderRadius: 10}}>
+                <div style={{width: '100%', marginTop: 'auto'}}><h1 className='handshake'><FontAwesomeIcon icon={faHandshake}/></h1></div>
+                <div className='hdwatts-about-text'>
+                  <p>
+                    I am a software developer based in New York and work with <a style={{color: '#FDFFFC'}} href='https://www.chronograph.pe'>Chronograph Private Equity</a>.
+                  </p>
+                  <p>  
+                    I specialize in web applications and have built apps with React-Redux, Node.js, .NET, Rails, ColdFusion, and Perl in professional environments.
+                    
+                    When I'm not coding, I love to travel, eat good food, and play guitar.
+                  </p>
+                  <p style={{marginBottom: 0}}>
+                    Feel free to reach out to me anytime: <a style={{color: '#FDFFFC'}} href='mailto:howard@hdwatts.com'>howard@hdwatts.com</a>.
+                  </p>
+                </div>
+              <PageDownBar pageId={'page1'} top/>
+              {/*<PageDownBar pageId={'page3'}/>*/}
+            </div>
+            </Element>
+          </div>
         {/*<Element name='page3'>
           <div className='card'>
             <PageDownBar pageId={'page1'} top/>
