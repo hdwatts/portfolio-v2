@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 const hellos = ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'Guten Tag', 'Hej', 'Привет', 'Namaste', 'Salaam', 'Olá', 'Oi']
-const speed = 3300
+const speed = 3000
 
 class Hellos extends Component{
   constructor() {
