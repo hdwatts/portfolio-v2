@@ -22,7 +22,7 @@ const IndexPage = () => (
           <div className=''>
             <Image />
             <div className='card' style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)'}}>
-              <h1 style={{margin: 'auto', textAlign: 'left', marginBottom: 0}}><Hellos/></h1>
+              <h1 style={{textAlign: 'center', marginTop: 'auto', marginBottom: 0, width: '100%'}}><Hellos/></h1>
               <h1>I'm Howard <span style={{textDecoration: 'underline'}}>Dean</span> Watts.</h1>
               <p>
                 <span className='line'>Lead Software Engineer</span>

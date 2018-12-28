@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Helmet } from "react-helmet"
 
 import Header from './header'
-import './layout.css'
+import './layout.scss'
 import metaimg from '../images/meta-img.png'
 
 const Layout = ({ children }) => (

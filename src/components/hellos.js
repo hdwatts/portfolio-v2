@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import TextTransition       from "react-text-transition";
 
 const hellos = ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'Guten Tag', 'Hej', 'Привет', 'Namaste', 'Salaam', 'Olá', 'Oi']
-const speed = 2000
+const speed = 3300
 
 class Hellos extends Component{
   constructor() {
@@ -19,16 +18,29 @@ class Hellos extends Component{
   }
   changeHello() {
     const { helloIndex } = this.state
-    const nextIndex = helloIndex + 1
     if (this._ismounted) {
-      this.setState({helloIndex: nextIndex === hellos.length ? 0 : nextIndex})
+      this.setState({helloIndex: helloIndex + 1})
       setTimeout(this.changeHello, speed)
     }
   }
 
   render() {  
     const { helloIndex } = this.state
-    return <TextTransition text={hellos[helloIndex] + ','}/>
+    console.log(hellos.filter((h,idx)=>
+        idx === helloIndex % hellos.length
+        || idx === (helloIndex % hellos.length) - 1
+        || (helloIndex > 0 && helloIndex % hellos.length === 0 && idx === hellos.length - 1)
+    ))
+    return <div style={{position: 'relative', width: '100%', textAlign: 'center'}}>
+      <div style={{opacity: 0}}>{hellos[helloIndex % hellos.length]}</div>
+      {hellos.filter((h,idx)=>
+        idx === helloIndex % hellos.length
+        || idx === (helloIndex % hellos.length) - 1
+        || (helloIndex > 0 && helloIndex % hellos.length === 0 && idx === hellos.length - 1)
+      ).map(h=>
+        <div key={h} className='hellos'>{h},</div>
+      )}
+    </div>
   }
 }
 
