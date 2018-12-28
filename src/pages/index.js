@@ -15,7 +15,7 @@ var Element = Scroll.Element;
 
 const IndexPage = () => (
   <Layout>
-    <SEO title='Welcome' keywords={['howard', 'dean', 'watts', 'software', 'developer']} />
+    <SEO title='Welcome' keywords={['hdwatts', 'howard', 'dean', 'watts', 'software', 'developer', 'manhattan', 'chronograph', 'private', 'equity']} />
     <Element name='container' className='element' id='containerElement'>
       <div style={{width: '100%'}}>
         <Element name='page1'>
