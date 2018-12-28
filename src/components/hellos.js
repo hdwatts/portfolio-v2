@@ -10,7 +10,7 @@ class Hellos extends Component{
     this.changeHello = this.changeHello.bind(this)
   }
   componentDidMount() {
-    setTimeout(this.changeHello, speed)
+    setInterval(this.changeHello, speed)
     this._ismounted = true;
   }
   componentWillUnmount() {
@@ -20,17 +20,11 @@ class Hellos extends Component{
     const { helloIndex } = this.state
     if (this._ismounted) {
       this.setState({helloIndex: helloIndex + 1})
-      setTimeout(this.changeHello, speed)
     }
   }
 
   render() {  
     const { helloIndex } = this.state
-    console.log(hellos.filter((h,idx)=>
-        idx === helloIndex % hellos.length
-        || idx === (helloIndex % hellos.length) - 1
-        || (helloIndex > 0 && helloIndex % hellos.length === 0 && idx === hellos.length - 1)
-    ))
     return <div style={{position: 'relative', width: '100%', textAlign: 'center'}}>
       <div style={{opacity: 0}}>{hellos[helloIndex % hellos.length]}</div>
       {hellos.filter((h,idx)=>

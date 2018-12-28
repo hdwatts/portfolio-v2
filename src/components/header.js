@@ -44,18 +44,6 @@ const Header = ({ siteTitle }) => (
         </span>
       </h1>
       <div>
-        <a
-          className='header-link'
-          style={{
-            cursor: 'pointer',
-            color: '#FDFFFC',
-            marginRight: 10,
-            textDecoration: 'none',
-          }}
-          href={'mailto:howard@hdwatts.com'}
-        >
-          Email Me!
-        </a>
         {/*<span
           to="/"
           className='header-link'

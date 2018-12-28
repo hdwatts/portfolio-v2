@@ -702,10 +702,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;*/
   background: linear-gradient(45deg, #011627, #2ec4b6, #ff9f1c, #e71d36);
-  -webkit-animation: background 30s ease infinite;
-  -moz-animation: background 30s ease infinite;
-  -o-animation: background 30s ease infinite;
-  animation: background 30s ease infinite;
+  -webkit-animation: background 60s ease infinite;
+  -moz-animation: background 60s ease infinite;
+  -o-animation: background 60s ease infinite;
+  animation: background 60s ease infinite;
   background-size: 800% 800%;
   background-repeat: no-repeat;
   font-family: 'Open-Sans', sans-serif;
@@ -772,7 +772,7 @@ body {
 
 .card {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
