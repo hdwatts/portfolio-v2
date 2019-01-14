@@ -38,7 +38,7 @@ const IndexPage = () => (
         </Element>
           <div style={{padding: '1.0875rem'}}>
             <Element name='page2'>
-            <div className='card' style={{backgroundColor: 'rgba(255,255,255,.3)', borderRadius: 10}}>
+            <div className='card textCard' style={{backgroundColor: 'rgba(255,255,255,.3)', borderRadius: 10}}>
                 <div style={{width: '100%', marginTop: 'auto'}}><h1 className='handshake'><FontAwesomeIcon icon={faHandshake}/></h1></div>
                 <div className='hdwatts-about-text'>
                   <p>

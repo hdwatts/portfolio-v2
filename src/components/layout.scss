@@ -701,6 +701,12 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;*/
+  background-color: #000000;
+  font-family: 'Open-Sans', sans-serif;
+  /*font-variant-caps: small-caps;*/
+}
+
+.textCard {
   background: linear-gradient(45deg, #011627, #2ec4b6, #ff9f1c, #e71d36);
   -webkit-animation: background 60s ease infinite;
   -moz-animation: background 60s ease infinite;
@@ -708,8 +714,6 @@ body {
   animation: background 60s ease infinite;
   background-size: 800% 800%;
   background-repeat: no-repeat;
-  font-family: 'Open-Sans', sans-serif;
-  /*font-variant-caps: small-caps;*/
 }
 
 .handshake {
@@ -841,12 +845,8 @@ span.highlight {
   text-decoration: none;
 }
 
-.social-list-icons div {
-  transition: transform 1s;
-}
-
-.social-list-icons div:hover {
-  transform: scale(1.15);
+.social-list-icons div a {
+  transition: color .5s;
 }
 
 .social-list-icons div:nth-child(n+2){
@@ -856,7 +856,13 @@ span.highlight {
   color: #FDFFFC !important;
 }
 
+.card a {
+  text-decoration-style: dotted;
+  /*color: #2ec4b6 !important;*/
+}
+
 .card a:hover {
+  text-decoration: underline;
   text-decoration-color: #2ec4b6 !important;
   /*color: #2ec4b6 !important;*/
 }
