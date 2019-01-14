@@ -857,13 +857,12 @@ span.highlight {
 }
 
 .card a {
-  text-decoration-style: dotted;
+  text-decoration-color: #2ec4b6 !important;
   /*color: #2ec4b6 !important;*/
 }
 
 .card a:hover {
-  text-decoration: underline;
-  text-decoration-color: #2ec4b6 !important;
+  text-decoration-color: #FDFFFC !important;
   /*color: #2ec4b6 !important;*/
 }
 
