@@ -707,11 +707,14 @@ body {
 }
 
 .textCard {
-  background: linear-gradient(45deg, #011627, #2ec4b6, #ff9f1c, #e71d36);
-  -webkit-animation: background 60s ease infinite;
-  -moz-animation: background 60s ease infinite;
-  -o-animation: background 60s ease infinite;
-  animation: background 60s ease infinite;
+  background: linear-gradient(45deg, #00647d, #2ec4b6);
+  -webkit-animation: background 45s ease infinite;
+  -moz-animation: background 45s ease infinite;
+  -o-animation: background 45s ease infinite;
+  animation: background 45s ease infinite;
+  -moz-box-shadow: inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow: inset 0 0 5px #000000;
   background-size: 800% 800%;
   background-repeat: no-repeat;
 }
