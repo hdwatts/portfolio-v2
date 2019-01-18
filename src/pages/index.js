@@ -29,7 +29,7 @@ const IndexPage = () => (
                 <span className='vertical-divider'>|</span>
                 <span className='line'>Founding Member of <a href='https://www.chronograph.pe' style={{color: 'inherit'}}>Chronograph.pe</a></span>
                 <span className='vertical-divider'>|</span>
-                <span className='line'>Manhattan, NY</span>
+                <span className='line'>New York, NY</span>
               </p>
               <SocialList/>
               <PageDownBar text='About' pageId={'page2'} offset={10}/>
