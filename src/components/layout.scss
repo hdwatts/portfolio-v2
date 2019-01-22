@@ -812,6 +812,9 @@ body {
   .header h1 {
     font-size: 150%;
   }
+  .header-scrolled h1{
+    font-size: 100%;
+  }
   .card h1 {
     font-size: 175%;
   }
@@ -831,6 +834,16 @@ span.highlight {
 .header span:hover,.header a:hover {
   text-decoration: underline !important;
   text-decoration-color: #2ec4b6;
+}
+.header h1 {
+  transition: font-size .5s ease;
+}
+.header-scrolled {
+  background-color: rgba(0,0,0,.5);
+}
+.header-scrolled h1 {
+  font-size: 20px;
+  transition: font-size .5s ease;
 }
 
 .social-list{
@@ -882,36 +895,6 @@ span.highlight {
 
 
 .hellos {
-  /*transform: translate(-50%, -50%);
-  overflow:hidden;
-  color: #FDFFFC;
-  height: 1em;
-
-  &__container {
-    overflow: hidden;
-    height: 1em;
-    padding: 0 1em;
-
-    &__list {
-      margin-top: 0;
-      padding-left: 110px;
-      text-align: left;
-      list-style: none;
-      
-      -webkit-animation-name: change;
-      -webkit-animation-duration: 4s;
-      -webkit-animation-iteration-count: infinite;
-      animation-name: change;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-
-      &__item {;
-        line-height:1em;
-        margin-top:10;
-        margin-bottom:10;
-      }
-    }
-  }*/
   position: absolute;
   margin-left:: auto;
   margin-right:: auto;
